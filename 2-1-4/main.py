@@ -2,6 +2,14 @@
 #   A program creates a window on your screen using Tkinter.
 import tkinter as tk
 
+def test_my_button():
+    print("I got here!")
+    if(ent_username.get() == "username" and ent_password.get() == "pass"):
+        frame_auth.tkrais()
+    else:
+        fail_label = tk.Label(frame_login, text="wrong")
+        fail_label.pack()
+
 # main window
 root = tk.Tk()
 root.wm_geometry("500x200")
